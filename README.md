@@ -2,7 +2,7 @@
 
 OMNIROUTE-LIMPAKUS
 INSTALL AND UNISTALL GUIDE
-Version 7.6.0
+Version 8.0
 
 Author / Contact:
 Omniroute-LIMPAKUS // ROOT ACCESS LAB
