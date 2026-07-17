@@ -53,6 +53,28 @@ UNISTALL
 5. Delete the extracted folder if it is no longer needed.
 
 
+
+SECURITY RECOMMENDATION
+======================================================================
+
+For maximum security, it is recommended to remove the Omniroute-LIMPAKUS
+extension from the browser after completing the OmniRoute Web provider
+configuration.
+
+Although all credential processing is performed locally and no data is sent
+to external servers, the extension has access to sensitive browser session
+information required for credential extraction. Keeping the extension
+installed unnecessarily increases the potential attack surface, especially
+on shared computers or environments where other users may have access to
+the same browser profile.
+
+After completing the configuration, remove the extension and keep only the
+generated OmniRoute configuration required for your own authorized account.
+The extension can always be installed again when a new provider configuration
+is required.
+
+
+
 LEGAL NOTICE
 ======================================================================
 
