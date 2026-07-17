@@ -18,6 +18,3 @@ Omniroute-LIMPAKUS // ROOT ACCESS LAB
 limpakus@gmail.com
 
 
-LANGUAGE SELECTOR
------------------
-The extension interface defaults to English. Use the globe dropdown in the top-right corner to choose another available language.
