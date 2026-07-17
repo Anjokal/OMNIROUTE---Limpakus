@@ -1,0 +1,76 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "short_name": "Omniroute-LIMPAKUS",
+  "version": "7.6.0",
+  "description": "__MSG_extensionDescription__",
+  "minimum_chrome_version": "114",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "cookies",
+    "clipboardWrite",
+    "storage",
+    "webRequest"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "options_page": "options.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmhelo/ii9bL5exjIra12ABraAo0xTAWiqy3oS/lf+/LeHc5Lu/JuQv9EGsk46BNCIoSPX4YM+qnQidPe9cOHybw8Sxwok9quqAkqdPH6Ftk7jGOAqYaEgihZgHSkQ/V6dXqkDYoj/Cbc7tmLnuBZb18zQGlmpZCUPgN/vfBlyR2fZkrZMqHIYPRb42Q646jHY7S4CdLLWUjJaf+o5SH8Ipmct87TQ3MRRKh4K+VKkGve/UxnUr2JPLturm3A8Lx8Pna/OVhS6aK0fQUadWJ8WhuSvj/U374m+yL/3zehiDzaybFaG2JyRUBlk1mVOS6hvYmo8hkkR4gNKJebddEnOQIDAQAB",
+  "default_locale": "en",
+  "host_permissions": [
+    "https://*.google.com/*",
+    "https://accounts.google.com/*",
+    "https://agent.adapta.one/*",
+    "https://app.blackbox.ai/*",
+    "https://arena.ai/*",
+    "https://business.gemini.google/*",
+    "https://chat.deepseek.com/*",
+    "https://chat.qwen.ai/*",
+    "https://chat.z.ai/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://copilot.microsoft.com/*",
+    "https://dola.com/*",
+    "https://gemini.google.com/*",
+    "https://grok.com/*",
+    "https://huggingface.co/*",
+    "https://innerai.com/*",
+    "https://kimi.com/*",
+    "https://m365.cloud.microsoft/*",
+    "https://meta.ai/*",
+    "https://perplexity.ai/*",
+    "https://poe.com/*",
+    "https://t3.chat/*",
+    "https://v0.dev/*",
+    "https://venice.ai/*",
+    "https://www.dola.com/*",
+    "https://www.innerai.com/*",
+    "https://www.kimi.com/*",
+    "https://www.meta.ai/*",
+    "https://www.perplexity.ai/*",
+    "https://www.zenmux.ai/*",
+    "https://yuanbao.tencent.com/*",
+    "https://zenmux.ai/*"
+  ]
+}

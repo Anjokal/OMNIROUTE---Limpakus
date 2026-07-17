@@ -1,0 +1,184 @@
+﻿   _      _____ __  __ _____        _  ___   _ ____  
+  | |    |_   _|  \/  |  __ \ /\   | |/ / | | / ___| 
+  | |      | | | \  / | |__) /  \  | ' /| | | \___ \ 
+  | |      | | | |\/| |  ___/ /\ \ |  < | | | |___) |
+  | |____ _| |_| |  | | |  / ____ \| . \| |_| |____/ 
+  |______|_____|_|  |_|_| /_/    \_\_|\_\\___/        
+
+OMNIROUTE-LIMPAKUS
+INSTALL AND UNISTALL GUIDE
+Version 7.6.0
+
+Author / Contact:
+Omniroute-LIMPAKUS // ROOT ACCESS LAB
+limpakus@gmail.com
+
+======================================================================
+WHAT THIS EXTENSION DOES AND WHY IT WAS CREATED
+======================================================================
+
+Omniroute-LIMPAKUS is a local Chrome extension created to simplify the manual
+collection and formatting of session credentials required by OmniRoute Web
+providers. It detects supported AI platforms, reads only the credential type
+needed for the selected provider, and copies the result to the clipboard so it
+can be pasted into OmniRoute.
+
+The extension was created because each AI platform stores authentication data
+differently: cookies, Local Storage values, bearer tokens, or complete request
+headers. Omniroute-LIMPAKUS provides one consistent interface for these
+different methods and reduces repetitive work when configuring several Web
+providers on a personal computer.
+
+It is intended only for accounts, browsers, devices and systems owned by the
+user or for which the user has explicit authorization.
+
+======================================================================
+ENGLISH — DEFAULT LANGUAGE
+======================================================================
+
+INSTALL
+-------
+1. Extract the ZIP archive to a permanent folder.
+2. Open Google Chrome.
+3. Enter chrome://extensions in the address bar.
+4. Enable Developer mode.
+5. Click Load unpacked.
+6. Select the extension folder.
+7. Optionally pin Omniroute-LIMPAKUS to the Chrome toolbar.
+
+UNISTALL
+--------
+1. Open chrome://extensions.
+2. Find Omniroute-LIMPAKUS.
+3. Click Remove.
+4. Confirm removal.
+5. Delete the extracted folder if it is no longer needed.
+
+======================================================================
+PORTUGUÊS
+======================================================================
+
+INSTALAR
+--------
+1. Extrai o ZIP para uma pasta permanente.
+2. Abre o Google Chrome.
+3. Escreve chrome://extensions na barra de endereços.
+4. Ativa Modo de programador.
+5. Clica em Carregar expandida.
+6. Seleciona a pasta extension.
+7. Opcionalmente, fixa Omniroute-LIMPAKUS na barra do Chrome.
+
+DESINSTALAR
+-----------
+1. Abre chrome://extensions.
+2. Localiza Omniroute-LIMPAKUS.
+3. Clica em Remover.
+4. Confirma a remoção.
+5. Apaga a pasta extraída quando já não for necessária.
+
+======================================================================
+ESPAÑOL
+======================================================================
+
+INSTALAR
+--------
+1. Extrae el ZIP en una carpeta permanente.
+2. Abre Google Chrome.
+3. Escribe chrome://extensions en la barra de direcciones.
+4. Activa Modo de desarrollador.
+5. Haz clic en Cargar descomprimida.
+6. Selecciona la carpeta extension.
+7. Opcionalmente, fija Omniroute-LIMPAKUS en la barra de Chrome.
+
+DESINSTALAR
+-----------
+1. Abre chrome://extensions.
+2. Busca Omniroute-LIMPAKUS.
+3. Haz clic en Eliminar.
+4. Confirma la eliminación.
+5. Borra la carpeta extraída cuando ya no sea necesaria.
+
+======================================================================
+FRANÇAIS
+======================================================================
+
+INSTALLER
+---------
+1. Extrayez le ZIP dans un dossier permanent.
+2. Ouvrez Google Chrome.
+3. Saisissez chrome://extensions dans la barre d’adresse.
+4. Activez le Mode développeur.
+5. Cliquez sur Charger l’extension non empaquetée.
+6. Sélectionnez le dossier extension.
+7. Épinglez éventuellement Omniroute-LIMPAKUS.
+
+DÉSINSTALLER
+------------
+1. Ouvrez chrome://extensions.
+2. Recherchez Omniroute-LIMPAKUS.
+3. Cliquez sur Supprimer.
+4. Confirmez la suppression.
+5. Supprimez le dossier extrait lorsqu’il n’est plus nécessaire.
+
+======================================================================
+DEUTSCH
+======================================================================
+
+INSTALLIEREN
+------------
+1. Entpacke das ZIP in einen dauerhaften Ordner.
+2. Öffne Google Chrome.
+3. Gib chrome://extensions in die Adressleiste ein.
+4. Aktiviere den Entwicklermodus.
+5. Klicke auf Entpackte Erweiterung laden.
+6. Wähle den Ordner extension.
+7. Optional kannst du Omniroute-LIMPAKUS anheften.
+
+DEINSTALLIEREN
+--------------
+1. Öffne chrome://extensions.
+2. Suche Omniroute-LIMPAKUS.
+3. Klicke auf Entfernen.
+4. Bestätige die Entfernung.
+5. Lösche den entpackten Ordner, wenn er nicht mehr benötigt wird.
+
+======================================================================
+ITALIANO
+======================================================================
+
+INSTALLARE
+----------
+1. Estrai lo ZIP in una cartella permanente.
+2. Apri Google Chrome.
+3. Digita chrome://extensions nella barra degli indirizzi.
+4. Attiva Modalità sviluppatore.
+5. Fai clic su Carica estensione non pacchettizzata.
+6. Seleziona la cartella extension.
+7. Facoltativamente, fissa Omniroute-LIMPAKUS.
+
+DISINSTALLARE
+-------------
+1. Apri chrome://extensions.
+2. Trova Omniroute-LIMPAKUS.
+3. Fai clic su Rimuovi.
+4. Conferma la rimozione.
+5. Elimina la cartella estratta quando non è più necessaria.
+
+======================================================================
+LEGAL NOTICE
+======================================================================
+
+Use this extension only with accounts and systems that belong to you or
+for which you have explicit authorization.
+
+The user is solely responsible for compliance with applicable law,
+platform terms, internal policies and third-party rights.
+
+Prohibited uses include unauthorized access, credential theft,
+surveillance, fraud, bypassing security controls and any unlawful or
+abusive activity.
+
+The software is provided "as is", without warranty. The author is not
+responsible for misuse, blocked accounts, data loss, service interruption,
+contractual breaches or direct or indirect consequences resulting from
+improper use.

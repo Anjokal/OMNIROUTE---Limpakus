@@ -1,0 +1,41 @@
+{
+  "extensionName": {
+    "message": "Omniroute-LIMPAKUS"
+  },
+  "extensionDescription": {
+    "message": "Outil local permettant de copier les identifiants de session des plateformes d’IA pour OmniRoute."
+  },
+  "actionTitle": {
+    "message": "Ouvrir Omniroute-LIMPAKUS"
+  },
+  "detectedNode": {
+    "message": "NŒUD DÉTECTÉ"
+  },
+  "analyzingTab": {
+    "message": "Analyse de l’onglet…"
+  },
+  "openSupported": {
+    "message": "Ouvrez une plateforme compatible et connectez-vous."
+  },
+  "authorizeCopy": {
+    "message": "AUTORISER ET COPIER"
+  },
+  "openPlatform": {
+    "message": "Ouvrir la plateforme"
+  },
+  "localOnly": {
+    "message": "LOCAL UNIQUEMENT // AUCUNE EXFILTRATION"
+  },
+  "searchPlatform": {
+    "message": "Rechercher une plateforme…"
+  },
+  "privacy": {
+    "message": "BOUCLIER DE CONFIDENTIALITÉ"
+  },
+  "settings": {
+    "message": "MATRICE DE CONTRÔLE"
+  },
+  "localProcessing": {
+    "message": "Les identifiants sont traités uniquement sur cet appareil."
+  }
+}

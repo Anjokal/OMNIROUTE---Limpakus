@@ -1,0 +1,18 @@
+Omniroute-LIMPAKUS // LEGAL NOTICE
+
+This extension must only be used on accounts and systems owned by the user or for which the user has explicit authorization.
+
+The user is solely responsible for:
+- compliance with laws and regulations;
+- compliance with platform terms of service;
+- protection of copied credentials;
+- any use made after installation.
+
+Prohibited uses include unauthorized access, credential theft, surveillance, fraud, security bypass and any unlawful activity.
+
+The extension is provided “as is”, without warranties. The author is not responsible for misuse, blocked accounts, loss of data, service interruptions or any direct or indirect consequence of improper use.
+
+AUTHOR / CONTACT
+----------------
+Omniroute-LIMPAKUS // ROOT ACCESS LAB
+limpakus@gmail.com

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Omniroute-LIMPAKUS</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand brand--enhanced">
+        <div class="brand-symbol" aria-hidden="true">
+          <span class="brand-dot brand-dot--one"></span>
+          <span class="brand-dot brand-dot--two"></span>
+          <span class="brand-dot brand-dot--three"></span>
+          <span class="brand-link brand-link--top"></span>
+          <span class="brand-link brand-link--left"></span>
+          <span class="brand-link brand-link--right"></span>
+          <b>&gt;_</b>
+        </div>
+        <div>
+          <strong>Omniroute‑LIMPAKUS</strong>
+          <span>AI SESSION MATRIX</span>
+        </div>
+      </div>
+      <button id="settingsBtn" class="icon-btn" title="CONTROL MATRIX">⚙</button>
+    </header>
+
+    <section class="hero">
+      <div class="pulse"></div><div class="terminal-mark">&gt;_</div>
+      <div>
+        <p id="detectedLabel" class="eyebrow">DETECTED NODE</p>
+        <h1 id="detectedName">Analyzing current tab…</h1>
+        <p id="detectedHint">Open a supported platform and sign in.</p>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="copyBtn" class="primary">
+        <span class="button-icon">⧉</span>
+        <span id="copyLabel">AUTHORIZE AND COPY</span></span>
+      </button>
+      <button id="openBtn" class="secondary">Open platform</button>
+    </section>
+
+    <div id="status" class="status neutral" role="status" aria-live="polite">
+      As credenciais são processadas apenas neste dispositivo.
+    </div>
+
+    <div class="toolbar">
+      <label class="search">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="__MSG_searchPlatform__" autocomplete="off">
+      </label>
+      <span id="countBadge" class="count">25</span>
+    </div>
+
+    <section id="providerList" class="provider-list" aria-label="Plataformas suportadas"></section>
+
+    <footer>
+      <span id="localOnlyLabel"><i></i> LOCAL ONLY // ZERO EXFIL</span>
+      <button id="privacyBtn" class="privacy-plus" title="Privacy / Legal information" aria-label="Privacy / Legal information">+</button>
+    </footer>
+  </div>
+
+  <dialog id="extraDialog">
+    <form method="dialog">
+      <h2 id="dialogTitle">Dados adicionais</h2>
+      <p id="dialogText"></p>
+      <label id="extraLabel">Valor adicional
+        <input id="extraInput" autocomplete="off">
+      </label>
+      <div class="dialog-actions">
+        <button value="cancel" class="secondary">Cancelar</button>
+        <button id="dialogConfirm" value="default" class="primary">Continuar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "extensionName": {
+    "message": "Omniroute-LIMPAKUS"
+  },
+  "extensionDescription": {
+    "message": "Local tool for copying AI platform session credentials for use with OmniRoute."
+  },
+  "actionTitle": {
+    "message": "Open Omniroute-LIMPAKUS"
+  },
+  "detectedNode": {
+    "message": "DETECTED NODE"
+  },
+  "analyzingTab": {
+    "message": "Analyzing current tab…"
+  },
+  "openSupported": {
+    "message": "Open a supported platform and sign in."
+  },
+  "authorizeCopy": {
+    "message": "AUTHORIZE AND COPY"
+  },
+  "openPlatform": {
+    "message": "Open platform"
+  },
+  "localOnly": {
+    "message": "LOCAL ONLY // ZERO EXFIL"
+  },
+  "searchPlatform": {
+    "message": "Search platform…"
+  },
+  "privacy": {
+    "message": "PRIVACY SHIELD"
+  },
+  "settings": {
+    "message": "CONTROL MATRIX"
+  },
+  "localProcessing": {
+    "message": "Credentials are processed only on this device."
+  }
+}

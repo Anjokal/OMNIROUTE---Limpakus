@@ -1,0 +1,327 @@
+[
+  {
+    "id": "adapta",
+    "name": "Adapta.org",
+    "short": "AD",
+    "domains": [
+      "agent.adapta.one"
+    ],
+    "url": "https://agent.adapta.one/",
+    "mode": "cookie_value",
+    "cookie": "__client",
+    "hint": "Cookie __client"
+  },
+  {
+    "id": "arena",
+    "name": "Arena",
+    "short": "AR",
+    "domains": [
+      "arena.ai"
+    ],
+    "url": "https://arena.ai/",
+    "mode": "cookie_header",
+    "required": [
+      "arena-auth-prod-v1.0"
+    ],
+    "hint": "Cookie completo; inclui arena-auth-prod-v1.0/.1"
+  },
+  {
+    "id": "blackbox",
+    "name": "Blackbox Web",
+    "short": "BB",
+    "domains": [
+      "app.blackbox.ai"
+    ],
+    "url": "https://app.blackbox.ai/",
+    "mode": "cookie_value_prefix",
+    "cookie": "__Secure-authjs.session-token",
+    "hint": "Cookie __Secure-authjs.session-token"
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT Web",
+    "short": "CG",
+    "domains": [
+      "chatgpt.com"
+    ],
+    "url": "https://chatgpt.com/",
+    "mode": "cookie_value_prefix",
+    "cookie": "__Secure-next-auth.session-token",
+    "hint": "Cookie __Secure-next-auth.session-token"
+  },
+  {
+    "id": "claude",
+    "name": "Claude Web",
+    "short": "CL",
+    "domains": [
+      "claude.ai"
+    ],
+    "url": "https://claude.ai/",
+    "mode": "cookie_first",
+    "cookies": [
+      "sessionKey",
+      "__Secure-next-auth.session-token",
+      "session"
+    ],
+    "hint": "Cookie de sessão"
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek Web",
+    "short": "DS",
+    "domains": [
+      "chat.deepseek.com"
+    ],
+    "url": "https://chat.deepseek.com/",
+    "mode": "storage",
+    "keys": [
+      "userToken"
+    ],
+    "hint": "Local Storage: userToken"
+  },
+  {
+    "id": "dola",
+    "name": "Dola Web (ByteDance)",
+    "short": "DO",
+    "domains": [
+      "www.dola.com",
+      "dola.com"
+    ],
+    "url": "https://www.dola.com/",
+    "mode": "cookie_header",
+    "required": [
+      "sessionid",
+      "ttwid"
+    ],
+    "hint": "Cookie completo; sessionid e ttwid"
+  },
+  {
+    "id": "gemini-business",
+    "name": "Gemini Business",
+    "short": "GB",
+    "domains": [
+      "business.gemini.google"
+    ],
+    "url": "https://business.gemini.google/",
+    "mode": "google_cookie",
+    "hint": "__Secure-1PSID + __Secure-1PSIDTS"
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini Web",
+    "short": "GE",
+    "domains": [
+      "gemini.google.com"
+    ],
+    "url": "https://gemini.google.com/",
+    "mode": "google_cookie",
+    "hint": "__Secure-1PSID + __Secure-1PSIDTS"
+  },
+  {
+    "id": "grok",
+    "name": "Grok Web",
+    "short": "GR",
+    "domains": [
+      "grok.com"
+    ],
+    "url": "https://grok.com/",
+    "mode": "cookie_header",
+    "required": [
+      "sso",
+      "sso-rw"
+    ],
+    "hint": "Cookie completo; sso e sso-rw"
+  },
+  {
+    "id": "huggingchat",
+    "name": "HuggingChat",
+    "short": "HF",
+    "domains": [
+      "huggingface.co"
+    ],
+    "url": "https://huggingface.co/chat/",
+    "mode": "cookie_header",
+    "required": [
+      "hf-chat"
+    ],
+    "hint": "Cookie completo; hf-chat"
+  },
+  {
+    "id": "inner",
+    "name": "Inner.ai",
+    "short": "IN",
+    "domains": [
+      "innerai.com",
+      "www.innerai.com"
+    ],
+    "url": "https://www.innerai.com/",
+    "mode": "inner",
+    "hint": "token + email da conta"
+  },
+  {
+    "id": "kimi",
+    "name": "Kimi Web",
+    "short": "KI",
+    "domains": [
+      "www.kimi.com",
+      "kimi.com"
+    ],
+    "url": "https://www.kimi.com/",
+    "mode": "cookie_header",
+    "required": [
+      "kimi-auth"
+    ],
+    "hint": "Cookie completo; kimi-auth"
+  },
+  {
+    "id": "m365",
+    "name": "Microsoft 365 Copilot",
+    "short": "M3",
+    "domains": [
+      "m365.cloud.microsoft"
+    ],
+    "url": "https://m365.cloud.microsoft/chat/",
+    "mode": "manual_m365",
+    "hint": "access_token + segmento Chathub"
+  },
+  {
+    "id": "copilot",
+    "name": "Microsoft Copilot Web",
+    "short": "CP",
+    "domains": [
+      "copilot.microsoft.com"
+    ],
+    "url": "https://copilot.microsoft.com/",
+    "mode": "captured_token",
+    "hint": "access_token"
+  },
+  {
+    "id": "muse",
+    "name": "Muse Spark / Meta AI",
+    "short": "MS",
+    "domains": [
+      "www.meta.ai",
+      "meta.ai"
+    ],
+    "url": "https://www.meta.ai/",
+    "mode": "cookie_first",
+    "cookies": [
+      "ecto_1_sess",
+      "abra_sess"
+    ],
+    "hint": "ecto_1_sess ou abra_sess"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity Web",
+    "short": "PX",
+    "domains": [
+      "www.perplexity.ai",
+      "perplexity.ai"
+    ],
+    "url": "https://www.perplexity.ai/",
+    "mode": "cookie_value_prefix",
+    "cookie": "__Secure-next-auth.session-token",
+    "hint": "Cookie __Secure-next-auth.session-token"
+  },
+  {
+    "id": "poe",
+    "name": "Poe Web",
+    "short": "PO",
+    "domains": [
+      "poe.com"
+    ],
+    "url": "https://poe.com/",
+    "mode": "cookie_value",
+    "cookie": "p-b",
+    "hint": "Cookie p-b"
+  },
+  {
+    "id": "qwen",
+    "name": "Qwen Web",
+    "short": "QW",
+    "domains": [
+      "chat.qwen.ai"
+    ],
+    "url": "https://chat.qwen.ai/",
+    "mode": "qwen",
+    "hint": "Local Storage token ou tongyi_sso_ticket"
+  },
+  {
+    "id": "t3",
+    "name": "t3.chat",
+    "short": "T3",
+    "domains": [
+      "t3.chat"
+    ],
+    "url": "https://t3.chat/",
+    "mode": "t3",
+    "hint": "convex-session-id + Cookie completo"
+  },
+  {
+    "id": "yuanbao",
+    "name": "Tencent Yuanbao",
+    "short": "YB",
+    "domains": [
+      "yuanbao.tencent.com"
+    ],
+    "url": "https://yuanbao.tencent.com/",
+    "mode": "cookie_header",
+    "required": [
+      "hy_user",
+      "hy_token"
+    ],
+    "hint": "Cookie completo; hy_user e hy_token"
+  },
+  {
+    "id": "v0",
+    "name": "v0 Vercel Web",
+    "short": "V0",
+    "domains": [
+      "v0.dev"
+    ],
+    "url": "https://v0.dev/",
+    "mode": "cookie_header",
+    "required": [],
+    "hint": "Cookie completo da sessão"
+  },
+  {
+    "id": "venice",
+    "name": "Venice Web",
+    "short": "VE",
+    "domains": [
+      "venice.ai"
+    ],
+    "url": "https://venice.ai/",
+    "mode": "cookie_header",
+    "required": [],
+    "hint": "Cookie completo da sessão"
+  },
+  {
+    "id": "zai",
+    "name": "Z.ai Web",
+    "short": "ZA",
+    "domains": [
+      "chat.z.ai"
+    ],
+    "url": "https://chat.z.ai/",
+    "mode": "cookie_header",
+    "required": [
+      "token"
+    ],
+    "hint": "Cookie completo; token"
+  },
+  {
+    "id": "zenmux",
+    "name": "ZenMux Free",
+    "short": "ZM",
+    "domains": [
+      "zenmux.ai",
+      "www.zenmux.ai"
+    ],
+    "url": "https://zenmux.ai/",
+    "mode": "cookie_header",
+    "required": [],
+    "hint": "Todos os cookies da sessão"
+  }
+]

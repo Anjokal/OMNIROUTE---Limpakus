@@ -1,0 +1,41 @@
+{
+  "extensionName": {
+    "message": "Omniroute-LIMPAKUS"
+  },
+  "extensionDescription": {
+    "message": "Lokales Tool zum Kopieren von Sitzungsdaten von KI-Plattformen für OmniRoute."
+  },
+  "actionTitle": {
+    "message": "Omniroute-LIMPAKUS öffnen"
+  },
+  "detectedNode": {
+    "message": "ERKANNTER KNOTEN"
+  },
+  "analyzingTab": {
+    "message": "Tab wird analysiert…"
+  },
+  "openSupported": {
+    "message": "Öffne eine unterstützte Plattform und melde dich an."
+  },
+  "authorizeCopy": {
+    "message": "AUTORISIEREN UND KOPIEREN"
+  },
+  "openPlatform": {
+    "message": "Plattform öffnen"
+  },
+  "localOnly": {
+    "message": "NUR LOKAL // KEINE EXFILTRATION"
+  },
+  "searchPlatform": {
+    "message": "Plattform suchen…"
+  },
+  "privacy": {
+    "message": "DATENSCHUTZSCHILD"
+  },
+  "settings": {
+    "message": "KONTROLLMATRIX"
+  },
+  "localProcessing": {
+    "message": "Anmeldedaten werden nur auf diesem Gerät verarbeitet."
+  }
+}
