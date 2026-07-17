@@ -61,6 +61,9 @@ For maximum security, it is recommended to remove the Omniroute-LIMPAKUS
 extension from the browser after completing the OmniRoute Web provider
 configuration.
 
+Temporary captured headers/cookies are automatically removed after 10 minutes.
+Use 'Clear captured data' after configuration. Clipboard credentials should be overwritten after use.
+
 Although all credential processing is performed locally and no data is sent
 to external servers, the extension has access to sensitive browser session
 information required for credential extraction. Keeping the extension
