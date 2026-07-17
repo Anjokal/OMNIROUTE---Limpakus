@@ -1,36 +1,5 @@
 
-function setupLanguageSelector(){
-  const btn = document.querySelector('#languageBtn');
-  const menu = document.querySelector('#languageMenu');
-  const current = document.querySelector('#currentLanguage');
 
-  if(!btn || !menu) return;
-
-  const saved = localStorage.getItem('omnirouteLanguage') || 'en';
-  current.textContent = saved.split('_')[0].toUpperCase();
-
-  btn.addEventListener('click', (event)=>{
-    event.stopPropagation();
-    menu.classList.toggle('open');
-  });
-
-  document.addEventListener('click', ()=>{
-    menu.classList.remove('open');
-  });
-
-  menu.querySelectorAll('[data-lang]').forEach(item=>{
-    item.addEventListener('click', ()=>{
-      const lang=item.dataset.lang;
-      localStorage.setItem('omnirouteLanguage', lang);
-      current.textContent=lang.split('_')[0].toUpperCase();
-      menu.classList.remove('open');
-
-      // Chrome extension translations are controlled by browser locale.
-      // Reload keeps the chosen preference for future UI translations.
-      location.reload();
-    });
-  });
-}
 
 
 async function clearCapturedData(){
@@ -244,12 +213,12 @@ async function copySelected(){
     const currentHost=new URL(activeTab.url).hostname;
     if(!hostMatches(currentHost,selected.domains)){
       await chrome.tabs.update(activeTab.id,{url:selected.url});
-      setStatus('Plataforma aberta. Inicia sessão e volta a clicar em “INJETAR ACESSO E COPIAR”.');
+      setStatus('Plataforma aberta. Inicia sessão e volta a clicar em “AUTHORIZE AND COPY”.');
       return;
     }
     const credential=await extract(selected);
     await navigator.clipboard.writeText(credential);
-    setStatus('Credencial copiada. Cola-a diretamente no formulário do OmniRoute.','success');
+    setStatus('Credential copied. Paste it directly into OmniRoute.','success');
   }catch(e){setStatus(e.message||'Não foi possível copiar.','error')}
   finally{copyBtn.disabled=false}
 }
@@ -267,7 +236,6 @@ $('#searchInput').addEventListener('input',e=>render(e.target.value));
 $('#settingsBtn').addEventListener('click',()=>chrome.runtime.openOptionsPage());
 $('#privacyBtn').addEventListener('click',()=>chrome.tabs.create({url:chrome.runtime.getURL('privacy.html')}));
 $('#clearDataBtn')?.addEventListener('click', clearCapturedData);
-setupLanguageSelector();
 applyLocalization();
 defaultDetectedName = document.querySelector('#detectedName')?.textContent || defaultDetectedName;
 defaultDetectedHint = document.querySelector('#detectedHint')?.textContent || defaultDetectedHint;

@@ -3,7 +3,7 @@
     "message": "Omniroute-LIMPAKUS"
   },
   "extensionDescription": {
-    "message": "Local tool for copying AI platform session credentials for use with OmniRoute."
+    "message": "Local browser extension for preparing AI provider credentials for OmniRoute."
   },
   "actionTitle": {
     "message": "Open Omniroute-LIMPAKUS"
@@ -30,10 +30,10 @@
     "message": "Search platform…"
   },
   "privacy": {
-    "message": "PRIVACY SHIELD"
+    "message": "PRIVACY"
   },
   "settings": {
-    "message": "CONTROL MATRIX"
+    "message": "SETTINGS"
   },
   "localProcessing": {
     "message": "Credentials are processed only on this device."
