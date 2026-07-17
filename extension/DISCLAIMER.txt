@@ -1,4 +1,4 @@
-Omniroute-LIMPAKUS // LEGAL NOTICE
+﻿Omniroute-LIMPAKUS // LEGAL NOTICE
 
 This extension must only be used on accounts and systems owned by the user or for which the user has explicit authorization.
 
@@ -16,3 +16,8 @@ AUTHOR / CONTACT
 ----------------
 Omniroute-LIMPAKUS // ROOT ACCESS LAB
 limpakus@gmail.com
+
+
+LANGUAGE SELECTOR
+-----------------
+The extension interface defaults to English. Use the globe dropdown in the top-right corner to choose another available language.
