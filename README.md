@@ -27,6 +27,9 @@ providers on a personal computer.
 It is intended only for accounts, browsers, devices and systems owned by the
 user or for which the user has explicit authorization.
 
+Omniroute-LIMPAKUS has zero external communication. 
+All credential processing occurs locally inside the user's browser.
+
 
 HOW TO USE
 ======================================================================
