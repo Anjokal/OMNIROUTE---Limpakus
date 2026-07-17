@@ -1,9 +1,4 @@
-  _      _____ __  __ _____        _  ___   _ ____  
-  | |    |_   _|  \/  |  __ \ /\   | |/ / | | / ___| 
-  | |      | | | \  / | |__) /  \  | ' /| | | \___ \ 
-  | |      | | | |\/| |  ___/ /\ \ |  < | | | |___) |
-  | |____ _| |_| |  | | |  / ____ \| . \| |_| |____/ 
-  |______|_____|_|  |_|_| /_/    \_\_|\_\\___/        
+  
 
 OMNIROUTE-LIMPAKUS
 INSTALL AND UNISTALL GUIDE
@@ -13,7 +8,7 @@ Author / Contact:
 Omniroute-LIMPAKUS // ROOT ACCESS LAB
 limpakus@gmail.com
 
-======================================================================
+
 WHAT THIS EXTENSION DOES AND WHY IT WAS CREATED
 ======================================================================
 
@@ -32,8 +27,8 @@ providers on a personal computer.
 It is intended only for accounts, browsers, devices and systems owned by the
 user or for which the user has explicit authorization.
 
-======================================================================
-ENGLISH — DEFAULT LANGUAGE
+
+HOW TO USE
 ======================================================================
 
 INSTALL
@@ -54,7 +49,7 @@ UNISTALL
 4. Confirm removal.
 5. Delete the extracted folder if it is no longer needed.
 
-======================================================================
+
 LEGAL NOTICE
 ======================================================================
 
@@ -74,7 +69,7 @@ contractual breaches or direct or indirect consequences resulting from
 improper use.
 
 
-======================================================================
+
 SCREENSHOTS
 ======================================================================
 
