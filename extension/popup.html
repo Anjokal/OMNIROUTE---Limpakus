@@ -39,13 +39,19 @@
     <section class="actions">
       <button id="copyBtn" class="primary">
         <span class="button-icon">⧉</span>
-        <span id="copyLabel">AUTHORIZE AND COPY</span></span>
+        <span id="copyLabel">AUTHORIZE AND COPY</span>
       </button>
       <button id="openBtn" class="secondary">Open platform</button>
     </section>
 
     <div id="status" class="status neutral" role="status" aria-live="polite">
-      As credenciais são processadas apenas neste dispositivo.
+      Credentials are processed only on this device.
+    </div>
+    <div class="security-notice">
+      <strong>LOCAL SECURITY NOTICE</strong>
+      <p>Temporary cookies and authorization headers may be stored locally for up to 10 minutes during provider detection.</p>
+      <p>Copied credentials remain on your clipboard until replaced. Paste immediately into OmniRoute and overwrite the clipboard afterwards.</p>
+      <button id="clearDataBtn" class="clear-btn">Clear captured data</button>
     </div>
 
     <div class="toolbar">

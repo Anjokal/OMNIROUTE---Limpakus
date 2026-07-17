@@ -1,8 +1,15 @@
 const CAPTURED = 'capturedHeaders';
+const CAPTURE_TTL_MS = 10 * 60 * 1000; // 10 minutes
 
 async function saveCaptured(hostname, data) {
   const current = await chrome.storage.session.get(CAPTURED);
   const all = current[CAPTURED] || {};
+  const now = Date.now();
+  for (const key of Object.keys(all)) {
+    if (!all[key].capturedAt || now - all[key].capturedAt > CAPTURE_TTL_MS) {
+      delete all[key];
+    }
+  }
   all[hostname] = { ...all[hostname], ...data, capturedAt: Date.now() };
   await chrome.storage.session.set({ [CAPTURED]: all });
 }
@@ -35,6 +42,15 @@ chrome.webRequest.onBeforeRequest.addListener(
 );
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+
+  if (message?.type === 'CLEAR_CAPTURED_DATA') {
+    chrome.storage.session.remove(CAPTURED).then(() => {
+      sendResponse({ cleared: true });
+    });
+    return true;
+  }
+
+
   if (message?.type === 'GET_CAPTURED') {
     chrome.storage.session.get(CAPTURED).then(({capturedHeaders = {}}) => {
       const wanted = String(message.hostname || '').toLowerCase();

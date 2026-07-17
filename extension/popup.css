@@ -137,3 +137,26 @@ dialog input{border:1px solid var(--line);border-radius:9px;background:#08111a;c
   font-family:Consolas,monospace;
   font-size:9px
 }
+
+.security-notice{
+ margin-top:10px;
+ padding:12px;
+ border-radius:12px;
+ border:1px solid rgba(0,168,255,.35);
+ background:rgba(0,168,255,.06);
+ color:#a9c0d0;
+ font-size:11px;
+ line-height:1.5
+}
+.security-notice strong{color:var(--green);font-size:11px;letter-spacing:.08em}
+.security-notice p{margin:6px 0}
+.clear-btn{
+ margin-top:8px;
+ border:1px solid rgba(255,93,120,.45);
+ background:rgba(255,93,120,.08);
+ color:#ffc2ce;
+ border-radius:9px;
+ padding:7px 12px;
+ font-weight:700
+}
+.clear-btn:hover{background:rgba(255,93,120,.18)}

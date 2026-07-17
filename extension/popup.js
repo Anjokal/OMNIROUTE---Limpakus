@@ -1,4 +1,14 @@
 
+async function clearCapturedData(){
+  try{
+    await chrome.runtime.sendMessage({type:'CLEAR_CAPTURED_DATA'});
+    setStatus('Temporary captured data cleared.', 'success');
+  }catch(e){
+    setStatus('Could not clear temporary data.', 'error');
+  }
+}
+
+
 function applyLocalization(){
   const setText = (selector, key, fallback) => {
     const element = document.querySelector(selector);
@@ -222,6 +232,7 @@ $('#openBtn').addEventListener('click',()=>selected&&chrome.tabs.create({url:sel
 $('#searchInput').addEventListener('input',e=>render(e.target.value));
 $('#settingsBtn').addEventListener('click',()=>chrome.runtime.openOptionsPage());
 $('#privacyBtn').addEventListener('click',()=>chrome.tabs.create({url:chrome.runtime.getURL('privacy.html')}));
+$('#clearDataBtn')?.addEventListener('click', clearCapturedData);
 applyLocalization();
 defaultDetectedName = document.querySelector('#detectedName')?.textContent || defaultDetectedName;
 defaultDetectedHint = document.querySelector('#detectedHint')?.textContent || defaultDetectedHint;
