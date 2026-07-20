@@ -10,7 +10,7 @@ The user is solely responsible for:
 
 Prohibited uses include unauthorized access, credential theft, surveillance, fraud, security bypass and any unlawful activity.
 
-The extension is provided “as is”, without warranties. The author is not responsible for misuse, blocked accounts, loss of data, service interruptions or any direct or indirect consequence of improper use.
+The extension is provided “as is”, without warranties. The author is not responsible for misuse, blocked accounts, loss of data, service interruenions or any direct or indirect consequence of improper use.
 
 AUTHOR / CONTACT
 ----------------

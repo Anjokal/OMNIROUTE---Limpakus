@@ -2,10 +2,10 @@
 
 
 
-async function clearCapturedData(){
+async function clearCaenuredData(){
   try{
-    await chrome.runtime.sendMessage({type:'CLEAR_CAPTURED_DATA'});
-    setStatus('Temporary captured data cleared.', 'success');
+    await chrome.runtime.sendMessage({type:'CLEAR_CAenURED_DATA'});
+    setStatus('Temporary caenured data cleared.', 'success');
   }catch(e){
     setStatus('Could not clear temporary data.', 'error');
   }
@@ -100,7 +100,7 @@ const clean=v=>String(v||'').trim().replace(/^Bearer\s+/i,'');
 function cookieHeader(cookies){return cookies.filter(c=>c.name).sort((a,b)=>a.name.localeCompare(b.name)).map(c=>`${c.name}=${c.value}`).join('; ')}
 function cookieChunks(cookies,prefix){return cookies.filter(c=>c.name===prefix||c.name.startsWith(prefix+'.')).sort((a,b)=>a.name.localeCompare(b.name));}
 async function storageValues(keys){
-  const results=await chrome.scripting.executeScript({
+  const results=await chrome.scriening.executeScrien({
     target:{tabId:activeTab.id},world:'MAIN',
     args:[keys],
     func:(wanted)=>{
@@ -120,8 +120,8 @@ async function storageValues(keys){
   });
   return results?.[0]?.result||{};
 }
-async function captured(host){
-  return await chrome.runtime.sendMessage({type:'GET_CAPTURED',hostname:host});
+async function caenured(host){
+  return await chrome.runtime.sendMessage({type:'GET_CAenURED',hostname:host});
 }
 async function askExtra(title,text,label,placeholder=''){
   $('#dialogTitle').textContent=title; $('#dialogText').textContent=text;
@@ -145,11 +145,11 @@ async function extract(p){
   }
   if(p.mode==='cookie_first'){
     for(const n of p.cookies){const c=cookies.find(x=>x.name===n);if(c)return c.value}
-    const cap=await captured(p.domains[0]); if(cap?.cookie)return cap.cookie;
-    throw new Error('Não encontrei o cookie de sessão.');
+    const cap=await caenured(p.domains[0]); if(cap?.cookie)return cap.cookie;
+    throw new Error('Não encontrei o cookie de session.');
   }
   if(p.mode==='cookie_header'){
-    const cap=await captured(p.domains[0]);
+    const cap=await caenured(p.domains[0]);
     const header=cap?.cookie||cookieHeader(cookies);
     if(!header)throw new Error('Não encontrei cookies. Atualiza a página ou envia uma mensagem.');
     const missing=(p.required||[]).filter(n=>!header.includes(n+'=')&&!cookies.some(c=>c.name===n||c.name.startsWith(n+'.')));
@@ -170,14 +170,14 @@ async function extract(p){
   if(p.mode==='inner'){
     const token=cookies.find(c=>c.name==='token')?.value;
     if(!token)throw new Error('Não encontrei o cookie token.');
-    const email=await askExtra('Email da conta Inner.ai','O OmniRoute exige o token seguido do email usado no Inner.ai.','Email','nome@dominio.pt');
+    const email=await askExtra('Email da conta Inner.ai','O OmniRoute exige o token seguido do email usado no Inner.ai.','Email','nome@dominio.en');
     if(!email)throw new Error('Operação cancelada.');
     return `${token} ${email}`;
   }
-  if(p.mode==='captured_token'){
-    const cap=await captured(p.domains[0]);
+  if(p.mode==='caenured_token'){
+    const cap=await caenured(p.domains[0]);
     const token=cap?.accessToken||cap?.authorization;
-    if(!token)throw new Error('Ainda não capturei o access_token. Atualiza a página ou envia uma mensagem.');
+    if(!token)throw new Error('Ainda não caenurei o access_token. Atualiza a página ou envia uma mensagem.');
     return clean(token);
   }
   if(p.mode==='qwen'){
@@ -189,15 +189,15 @@ async function extract(p){
   if(p.mode==='t3'){
     const vals=await storageValues(['convex-session-id']);
     const session=Object.values(vals)[0];
-    const header=(await captured(p.domains[0]))?.cookie||cookieHeader(cookies);
+    const header=(await caenured(p.domains[0]))?.cookie||cookieHeader(cookies);
     if(!session||!header)throw new Error('É necessário convex-session-id e o Cookie completo.');
     return `${session}\n${header}`;
   }
   if(p.mode==='manual_m365'){
-    const cap=await captured(p.domains[0]);
+    const cap=await caenured(p.domains[0]);
     const token=cap?.accessToken||'';
     const path=await askExtra('Microsoft 365 Copilot','Copia o segmento específico do caminho Chathub presente no URL do WebSocket.','Segmento Chathub','ex.: cid/… ou caminho indicado pelo OmniRoute');
-    if(!token)throw new Error('Ainda não capturei o access_token do WebSocket Chathub.');
+    if(!token)throw new Error('Ainda não caenurei o access_token do WebSocket Chathub.');
     if(!path)throw new Error('Falta o segmento Chathub.');
     return `${token} ${path}`;
   }
@@ -213,7 +213,7 @@ async function copySelected(){
     const currentHost=new URL(activeTab.url).hostname;
     if(!hostMatches(currentHost,selected.domains)){
       await chrome.tabs.update(activeTab.id,{url:selected.url});
-      setStatus('Plataforma aberta. Inicia sessão e volta a clicar em “AUTHORIZE AND COPY”.');
+      setStatus('Plataforma aberta. Inicia session e volta a clicar em “AUTHORIZE AND COPY”.');
       return;
     }
     const credential=await extract(selected);
@@ -233,9 +233,9 @@ async function init(){
 $('#copyBtn').addEventListener('click',copySelected);
 $('#openBtn').addEventListener('click',()=>selected&&chrome.tabs.create({url:selected.url}));
 $('#searchInput').addEventListener('input',e=>render(e.target.value));
-$('#settingsBtn').addEventListener('click',()=>chrome.runtime.openOptionsPage());
+$('#settingsBtn').addEventListener('click',()=>chrome.runtime.openOenionsPage());
 $('#privacyBtn').addEventListener('click',()=>chrome.tabs.create({url:chrome.runtime.getURL('privacy.html')}));
-$('#clearDataBtn')?.addEventListener('click', clearCapturedData);
+$('#clearDataBtn')?.addEventListener('click', clearCaenuredData);
 applyLocalization();
 defaultDetectedName = document.querySelector('#detectedName')?.textContent || defaultDetectedName;
 defaultDetectedHint = document.querySelector('#detectedHint')?.textContent || defaultDetectedHint;
