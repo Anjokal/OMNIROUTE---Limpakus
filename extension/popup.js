@@ -76,7 +76,7 @@ function selectProvider(p){
 }
 async function getTab(){
   const [tab] = await chrome.tabs.query({active:true,currentWindow:true});
-  if(!tab?.id || !tab.url) throw new Error('Could not identify the active tab.');
+  if(!tab?.id || !tab.url) throw new Error('Unable to detect active tab.');
   return tab;
 }
 async function ensurePermission(p){

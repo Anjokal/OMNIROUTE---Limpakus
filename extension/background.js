@@ -1,19 +1,3 @@
-
-chrome.alarms.create('cleanupCapturedData', { periodInMinutes: 5 });
-
-chrome.alarms.onAlarm.addListener(async (alarm) => {
-  if (alarm.name !== 'cleanupCapturedData') return;
-  const current = await chrome.storage.session.get(CAPTURED);
-  const all = current[CAPTURED] || {};
-  const now = Date.now();
-  for (const key of Object.keys(all)) {
-    if (!all[key].capturedAt || now - all[key].capturedAt > CAPTURE_TTL_MS) {
-      delete all[key];
-    }
-  }
-  await chrome.storage.session.set({ [CAPTURED]: all });
-});
-
 const CAPTURED = 'capturedHeaders';
 const CAPTURE_TTL_MS = 10 * 60 * 1000; // 10 minutes
 
