@@ -72,7 +72,7 @@ DESINSTALAR
 -----------
 1. Abre chrome://extensions.
 2. Localiza Omniroute-LIMPAKUS.
-3. Clica em Remove.
+3. Clica em Remover.
 4. Confirma a remoção.
 5. Apaga a pasta extraída quando já não for necessária.
 
